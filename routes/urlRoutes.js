@@ -23,7 +23,6 @@ router.post('/', async (req, res) => {
             customAlias,
             topic
         }
-        console.log(baseUrl)
         const createdUrl = await Url.create(payload)
 
         res.status(200).json({
