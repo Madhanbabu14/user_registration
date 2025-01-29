@@ -28,13 +28,6 @@ const Url = sequelize.define('url', {
     createdAt: { type: Sequelize.DATE, defaultValue: Sequelize.NOW },
 });
 
-// const Analytics = sequelize.define('analytics', {
-//     totalClicks: { type: Sequelize.INTEGER },
-//     uniqueUsers: { type: Sequelize.INTEGER },
-//     clicksByDate: { type: Sequelize.JSON },
-//     osType: { type: Sequelize.JSON },
-//     deviceType: { type: Sequelize.JSON }
-// });
 const Analytics = sequelize.define('analytics', {
     alias: { type: Sequelize.STRING},
     ip: { type: Sequelize.STRING},
